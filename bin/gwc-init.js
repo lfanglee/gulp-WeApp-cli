@@ -35,8 +35,8 @@ const setProjectRoot = (projectName) => {
                 const isDir = fs.statSync(fileName).isDirectory();
                 return name.indexOf(projectName) !== -1 && isDir;
             }).length !==0) {
-                // reject(new Error(`项目${projectName}已经存在`));
-                resolve(projectName); // 调试代码
+                reject(new Error(`项目${projectName}已经存在`));
+                // resolve(projectName); // 调试代码
                 return;
             }
             resolve(projectName);
@@ -78,11 +78,11 @@ const promptQuestions = (config) => {
 
 const init = () => {
     setProjectRoot(projectName).then(projectRoot => {
-        // download(projectRoot)
+        download(projectRoot)
         // 以下为调试代码
-        new Promise((resolve, reject) => {
-            resolve(path.join(projectRoot, '.download-temp'));
-        })
+        // new Promise((resolve, reject) => {
+        //     resolve(path.join(projectRoot, '.download-temp'));
+        // })
         .then(target => ({
             name: projectName,
             root: projectRoot,
