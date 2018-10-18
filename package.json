@@ -1,7 +1,11 @@
 {
-  "name": "gulp-WeApp-cli",
+  "name": "gulp-weapp-cli",
   "version": "1.0.0",
   "description": "a cli tool for gulp-WeApp-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kindboy/gulp-WeApp-cli"
+  },
   "bin": {
     "gwc": "./bin/gulp-WeApp-cli.js"
   },
