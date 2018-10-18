@@ -24,6 +24,3 @@ $ gwc init my-weapp-project
 
 ### License
 [MIT](https://github.com/kindboy/gulp-WeApp-cli/blob/master/LICENSE)
-
-### Keywords
-weapp wechat wp gulp cli
