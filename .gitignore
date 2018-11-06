@@ -8,8 +8,6 @@ npm-debug.log
 *.swp
 stats.json
 package-lock.json
-.eslintrc.json
-.eslintrc.js
 push.sh
 .DS_Store
 */.DS_Store
