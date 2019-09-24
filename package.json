@@ -1,6 +1,6 @@
 {
   "name": "gulp-weapp-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a cli tool for gulp-WeApp-boilerplate",
   "keywords": [
     "gulp",
